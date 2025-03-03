@@ -1,0 +1,23 @@
+extend type Query {
+    summary(topCount: Int): Summary!
+}
+
+type Summary {
+    totalUsers: Int!
+    totalProjects: Int!
+    totalKeys: Int!
+    totalUsages: Int!
+    topUsagesKeys: [TopUsageKey!]!
+    topUsageApis: [TopUsageApi!]!
+}
+
+type TopUsageKey {
+    keyName: String!
+    username: String!
+    count: Int!
+}
+
+type TopUsageApi {
+    apiName: String!
+    count: Int!
+}

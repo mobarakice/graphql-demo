@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: gql-batching
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      show-sql: true
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gql-batching
+    username: admin
+    password: 1234
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
