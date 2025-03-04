@@ -8,4 +8,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ProjectService {
     private final ProjectRepository repository;
+
+    public Long totalCount(){
+        return repository.count();
+    }
 }

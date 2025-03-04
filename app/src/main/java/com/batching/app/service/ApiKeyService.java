@@ -8,4 +8,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ApiKeyService {
     private final ApiKeyRepository repository;
+
+    public Long totalCount(){
+        return repository.count();
+    }
 }

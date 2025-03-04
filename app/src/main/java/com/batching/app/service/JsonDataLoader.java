@@ -28,7 +28,9 @@ public class JsonDataLoader {
 
     @EventListener(ApplicationReadyEvent.class)
     public void loadData() {
-        jsonLoad();
+        if(userRepository.count()<1) {
+            jsonLoad();
+        }
     }
 
     private void jsonLoad() {
