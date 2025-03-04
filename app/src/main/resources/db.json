@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Lee Robinson",
+      "email": "lee@robinson.com"
+    },
+    {
+      "id": 2,
+      "name": "Amy Burns",
+      "email": "amy@burns.com"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Test",
+      "description": "Testing feature",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "SweetSavvy",
+      "description": "SweetSavvy",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "name": "Demo project",
+      "description": "Explore feature",
+      "userId": 1
+    }
+  ],
+  "apiKeys": [
+    { "apiKey": "d6e15727-9fe1-4961-8c5b-ea44a9bd81aa", "appType": "WEB", "packageName": "sweetsavvy.com", "projectId": 2 },
+    { "apiKey": "3958dc9e-712f-4377-85e9-fec4b6a6442a", "appType": "ANDROID", "packageName": "com.sweetsavvy", "projectId": 2 },
+    { "apiKey": "CC27C14A-0ACF-4F4A-A6C9-D45682C144B9", "appType": "IOS", "packageName": "com.sweetsavvy", "projectId": 2 },
+    { "apiKey": "76d65c26-f784-44a2-ac19-586678f7c2f2", "appType": "ANDROID", "packageName": "com.demo.stg", "projectId": 3 },
+    { "apiKey": "13D07535-C59E-4157-A011-F8D2EF4E0CBB", "appType": "IOS", "packageName": "com.test.prod", "projectId": 1 }
+  ],
+
+  "histories": [
+    { "uri": "/test","code":  200,"method": "GET","apiKey": "d6e15727-9fe1-4961-8c5b-ea44a9bd81aa", "appType": "WEB", "packageName": "sweetsavvy.com", "projectId": 2, "userId": 2 },
+    { "uri": "/test","code":  200,"method": "GET","apiKey": "d6e15727-9fe1-4961-8c5b-ea44a9bd81aa", "appType": "WEB", "packageName": "sweetsavvy.com", "projectId": 2, "userId": 2 },
+    { "uri": "/test","code":  200,"method": "GET","apiKey": "d6e15727-9fe1-4961-8c5b-ea44a9bd81aa", "appType": "WEB", "packageName": "sweetsavvy.com", "projectId": 2, "userId": 2 },
+    { "uri": "/test","code":  200,"method": "GET","apiKey": "d6e15727-9fe1-4961-8c5b-ea44a9bd81aa", "appType": "WEB", "packageName": "sweetsavvy.com", "projectId": 2, "userId": 2 },
+    { "uri": "/test","code":  200,"method": "GET","apiKey": "d6e15727-9fe1-4961-8c5b-ea44a9bd81aa", "appType": "WEB", "packageName": "sweetsavvy.com", "projectId": 2, "userId": 2 },
+    { "uri": "/api/test","code":  201,"method": "POST", "apiKey": "3958dc9e-712f-4377-85e9-fec4b6a6442a", "appType": "ANDROID", "packageName": "com.sweetsavvy", "projectId": 2, "userId": 2 },
+    { "uri": "/api/test","code":  200,"method": "GET", "apiKey": "3958dc9e-712f-4377-85e9-fec4b6a6442a", "appType": "ANDROID", "packageName": "com.sweetsavvy", "projectId": 2, "userId": 2 },
+    { "uri": "/api/test","code":  201,"method": "DELETE", "apiKey": "3958dc9e-712f-4377-85e9-fec4b6a6442a", "appType": "ANDROID", "packageName": "com.sweetsavvy", "projectId": 2, "userId": 2 },
+    { "uri": "/api/test","code":  201,"method": "POST", "apiKey": "3958dc9e-712f-4377-85e9-fec4b6a6442a", "appType": "ANDROID", "packageName": "com.sweetsavvy", "projectId": 2, "userId": 2 },
+    { "uri": "/api/v1/test","code":  203,"method": "PUT", "apiKey": "CC27C14A-0ACF-4F4A-A6C9-D45682C144B9", "appType": "IOS", "packageName": "com.sweetsavvy", "projectId": 2, "userId": 2 },
+    { "uri": "/user","code":  200,"method": "GET", "apiKey": "76d65c26-f784-44a2-ac19-586678f7c2f2", "appType": "ANDROID", "packageName": "com.demo.stg", "projectId": 3 , "userId": 1},
+    { "uri": "/user","code":  200,"method": "GET", "apiKey": "76d65c26-f784-44a2-ac19-586678f7c2f2", "appType": "ANDROID", "packageName": "com.demo.stg", "projectId": 3 , "userId": 1},
+    { "uri": "/user","code":  200,"method": "GET", "apiKey": "76d65c26-f784-44a2-ac19-586678f7c2f2", "appType": "ANDROID", "packageName": "com.demo.stg", "projectId": 3 , "userId": 1},
+    { "uri": "/product","code":  200,"method": "GET", "apiKey": "13D07535-C59E-4157-A011-F8D2EF4E0CBB", "appType": "IOS", "packageName": "com.test.prod", "projectId": 1, "userId": 1 },
+    { "uri": "/product","code":  201,"method": "POST", "apiKey": "13D07535-C59E-4157-A011-F8D2EF4E0CBB", "appType": "IOS", "packageName": "com.test.prod", "projectId": 1, "userId": 1 },
+    { "uri": "/product","code":  200,"method": "GET", "apiKey": "13D07535-C59E-4157-A011-F8D2EF4E0CBB", "appType": "IOS", "packageName": "com.test.prod", "projectId": 1, "userId": 1 },
+    { "uri": "/product","code":  203,"method": "PUT", "apiKey": "13D07535-C59E-4157-A011-F8D2EF4E0CBB", "appType": "IOS", "packageName": "com.test.prod", "projectId": 1, "userId": 1 }
+  ]
+}

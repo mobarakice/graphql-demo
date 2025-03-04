@@ -3,9 +3,9 @@ springBoot = "3.3.4"
 springBootDM = "1.1.6"
 springDoc = "2.3.0"
 jsonpath = "2.8.1"
-modelMapper = "3.2.0"
-modelMapperRecord = "1.0.0"
-lombok = "1.18.34"
+mapstruct = "1.6.3"
+lombok = "1.18.36"
+lombokMapstructBingding = "0.2.0"
 postgresql = "42.7.2"
 mysql = "8.0.33"
 hibernate = "6.2.8.Final"
@@ -29,8 +29,9 @@ hibernate = { group = "org.hibernate.orm", name = "hibernate-core", version.ref 
 springdoc-openapi-ui = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "springDoc" }
 springdoc-openapi-data-rest = { module = "org.springdoc:springdoc-openapi-data-rest", version.ref = "springDoc" }
 jsonpath = { module = "com.jayway.jsonpath:json-path", version.ref = "jsonpath" }
-modelmapper = { module = "org.modelmapper:modelmapper", version.ref = "modelMapper" }
-modelmapper-record = { module = "org.modelmapper:modelmapper-module-record", version.ref = "modelMapperRecord" }
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
+lombok-mapstruct-binding = { module = "org.projectlombok:lombok-mapstruct-binding", version.ref = "lombokMapstructBingding" }
 lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
 junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
 jjwt = { module = "io.jsonwebtoken:jjwt-api", version.ref = "jjwt" }
